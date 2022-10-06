@@ -30,11 +30,33 @@ body .container {
 }
 body .container .container_preview {
   display: flex;
+  margin: 20px;
 }
-body .container .container_preview .container_preview_left img {
+@media screen and (max-width: 600px) {
+  body .container .container_preview {
+    flex-direction: column;
+  }
+}
+body .container .container_preview .container_preview_left .img-desktop {
   width: 280px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_left .img-desktop {
+    display: none;
+  }
+}
+body .container .container_preview .container_preview_left .img-mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_left .img-mobile {
+    display: block;
+    width: 280px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
 }
 body .container .container_preview .container_preview_right {
   background-color: var(--White);
@@ -42,11 +64,26 @@ body .container .container_preview .container_preview_right {
   border-bottom-right-radius: 10px;
   padding: 20px 28px 20px 25px;
 }
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right {
+    display: block;
+    width: 280px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 17px;
+  }
+}
 body .container .container_preview .container_preview_right .text-perfume {
   font-family: Montserrat;
-  font-size: 10px;
+  font-size: 0.625rem;
   letter-spacing: 6px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right .text-perfume {
+    margin-bottom: 10px;
+  }
 }
 body .container .container_preview .container_preview_right h1 {
   font-family: "Fraunces";
@@ -55,11 +92,67 @@ body .container .container_preview .container_preview_right h1 {
   max-width: 170px;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right h1 {
+    max-width: 273px;
+    margin-bottom: 13px;
+  }
+}
 body .container .container_preview .container_preview_right .description_perfume {
   color: var(--Dark-grayish-blue);
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 22px;
   max-width: 236px;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right .description_perfume {
+    font-size: 0.75rem;
+    line-height: 20px;
+  }
+}
+body .container .container_preview .container_preview_right .prices {
+  align-items: center;
+  display: flex;
+  margin-top: 23px;
+  margin-bottom: 26px;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right .prices {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+body .container .container_preview .container_preview_right .prices .price_green {
+  color: var(--Dark-cyan);
+  font-family: Fraunces;
+  font-size: 1.9rem;
+}
+@media screen and (max-width: 600px) {
+  body .container .container_preview .container_preview_right .prices .price_green {
+    font-size: 1.9rem;
+  }
+}
+body .container .container_preview .container_preview_right .prices .price_strike {
+  color: var(--Dark-grayish-blue);
+  font-family: Montserrat;
+  font-size: 0.65rem;
+  font-weight: 500;
+  margin-left: 28px;
+}
+body .container .container_preview .container_preview_right button {
+  border: none;
+  background: var(--Dark-cyan);
+  border-radius: 8px;
+  color: var(--White);
+  display: flex;
+  gap: 10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

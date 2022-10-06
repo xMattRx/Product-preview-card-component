@@ -1,0 +1,65 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--Cream);
+}
+body .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+body .container .container_preview {
+  display: flex;
+}
+body .container .container_preview .container_preview_left img {
+  width: 280px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+body .container .container_preview .container_preview_right {
+  background-color: var(--White);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 28px 20px 25px;
+}
+body .container .container_preview .container_preview_right .text-perfume {
+  font-family: Montserrat;
+  font-size: 10px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+body .container .container_preview .container_preview_right h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  line-height: 30px;
+  max-width: 170px;
+  margin-bottom: 25px;
+}
+body .container .container_preview .container_preview_right .description_perfume {
+  color: var(--Dark-grayish-blue);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  max-width: 236px;
+}/*# sourceMappingURL=style.css.map */

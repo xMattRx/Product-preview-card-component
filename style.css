@@ -38,22 +38,17 @@ body .container .container_preview {
   }
 }
 body .container .container_preview .container_preview_left .img-desktop {
-  width: 280px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  height: 100%;
+  width: 280px;
 }
 @media screen and (max-width: 600px) {
   body .container .container_preview .container_preview_left .img-desktop {
-    display: none;
-  }
-}
-body .container .container_preview .container_preview_left .img-mobile {
-  display: none;
-}
-@media screen and (max-width: 600px) {
-  body .container .container_preview .container_preview_left .img-mobile {
     display: block;
     width: 280px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
   }

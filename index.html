@@ -21,8 +21,13 @@
   <main class="container">
     <div class="container_preview">
       <div class="container_preview_left">
-        <img class="img-desktop" src="/images/image-product-desktop.jpg" alt="">
-        <img class="img-mobile" src="/images/image-product-mobile.jpg" alt="">
+        <!-- <img class="img-desktop" src="/images/image-product-desktop.jpg" alt="">
+        <img class="img-mobile" src="/images/image-product-mobile.jpg" alt=""> -->
+
+        <picture>
+          <source media="(max-width:600px)" srcset="./images/image-product-mobile.jpg">
+          <img src="./images/image-product-desktop.jpg" class="img-desktop" alt="Gabrielle Parfum">
+        </picture>
       </div>
 
       <div class="container_preview_right">
